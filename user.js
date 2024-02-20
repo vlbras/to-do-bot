@@ -56,7 +56,7 @@ class UserController {
                 progress += '⬜️'
             }
         }
-        return bot.sendPhoto(chatId, 'ava.jpg', { 'caption': `Name: Vlad\nLevel: ${Math.floor(user.points / 10 + 1)}\nYour progress:\n\n${progress}` })
+        return bot.sendPhoto(chatId, 'ava.jpg', { 'caption': `Your level: ${Math.floor(user.points / 10 + 1)}\nYour progress:\n\n${progress}` })
     }
 }
 
